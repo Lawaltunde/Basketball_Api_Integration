@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball API</title>
+    <!--<link rel="stylesheet" href="/static/style.css">-->
+</head>
+    <!-- style -->
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 20px;
+        }
+
+        h1 {
+          margin-bottom: 20px;
+        }
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+          justify-content: center;
+        }
+
+        .grid-item img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+<body>
+    <h1>BALLDONTLIE DASHBOARD</h1>
+    <div class="grid-container">
+        <div class="grid-item"><img src="/plot/1" alt="Plot 1"></div>
+        <div class="grid-item"><img src="/plot/2" alt="Plot 2"></div>
+        <div class="grid-item"><img src="/plot/3" alt="Plot 3"></div>
+        <div class="grid-item"><img src="/plot/4" alt="Plot 4"></div>
+        <div class="grid-item"><img src="/plot/5" alt="Plot 5"></div>
+        <div class="grid-item">
+            <p>Mean value for the first ten players: {{value}}</p>
+        </br>
+            <p>Median value for the first ten players: {{value2}}</p>
+        </div>
+    </div>
+</body>
+</html>
